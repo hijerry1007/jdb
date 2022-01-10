@@ -1,0 +1,10 @@
+version: '3'
+services: 
+  flyway:
+    image: flyway/flyway
+    container_name: project_dbMigration
+    network_mode: host
+    command: migrate -X
+    volumes:
+      - ./dbMigration/sql:/flyway/sql
+      - ./dbMigration/config/migration.conf:/flyway/conf/flyway.conf
