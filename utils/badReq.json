@@ -1,0 +1,11 @@
+{
+    "NO_USER": {
+        "message": "查無用戶"
+    },
+    "PASSWORD_ERROR": {
+        "message": "密碼錯誤！"
+    },
+    "ACCESS_DENIED": {
+        "message": "無此權限"
+    }
+}

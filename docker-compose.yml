@@ -6,5 +6,5 @@ services:
     network_mode: host
     command: migrate -X
     volumes:
-      - ./dbMigration/sql:/flyway/sql
-      - ./dbMigration/config/migration.conf:/flyway/conf/flyway.conf
+      - ./db/migration_sql:/flyway/sql
+      - ./db/config/migration.conf:/flyway/conf/flyway.conf
